@@ -1,0 +1,41 @@
+/* Neon '86: chrome-and-neon arcade style. Near-black navy glass, electric cyan
+   outlines, hot pink glow, monospace "terminal" labels and hard-stop gradient
+   lines that hint at a scanline/grid floor. Original work. */
+.ctv-home { background-color: #070818; color: #e9f7ff; font-family: monospace; }
+.ctv-ambient { background-image: linear-gradient(0deg, transparent, transparent); }
+
+/* Chrome clock: white core, pink drop line, cyan bloom. */
+.ctv-clock { font-size: 84px; color: #f4f8ff; font-family: sans-serif; font-weight: 700; font-style: italic; letter-spacing: 2px; text-shadow: 0px 3px 0px rgba(255,46,136,0.95), 0px 0px 22px rgba(40,220,255,0.9), 0px -1px 0px rgba(255,255,255,0.9); }
+.ctv-period { color: #28dcff; font-family: monospace; font-weight: 700; text-transform: uppercase; text-shadow: 0px 0px 10px rgba(40,220,255,0.9); }
+.ctv-greeting { color: #28dcff; font-family: monospace; font-weight: 700; text-transform: uppercase; letter-spacing: 5px; text-shadow: 0px 0px 12px rgba(40,220,255,0.95), 0px 0px 2px rgba(255,255,255,0.8); }
+.ctv-date { font-size: 23px; color: #ff5fae; font-family: monospace; font-weight: 600; text-transform: uppercase; letter-spacing: 4px; text-shadow: 0px 0px 10px rgba(255,46,136,0.85), 0px 2px 4px rgba(7,8,24,0.95); }
+.ctv-divider { color: #ff2e88; background-color: #ff2e88; box-shadow: 0px 0px 12px rgba(255,46,136,0.9); }
+.ctv-hero { color: #f4f8ff; font-family: sans-serif; font-weight: 400; font-style: italic; letter-spacing: 1px; text-shadow: 0px 3px 0px rgba(255,46,136,0.9), 0px 0px 18px rgba(40,220,255,0.85), 0px 4px 10px rgba(7,8,24,0.9); }
+
+/* Outline-only shortcuts that light up pink. */
+.ctv-shortcut { color: #28dcff; font-family: monospace; background-color: rgba(7,8,24,0.45); border-color: #28dcff; box-shadow: 0px 0px 10px rgba(40,220,255,0.45); transition: box-shadow 140ms ease-out; }
+.ctv-shortcut.is-focused { color: #070818; background-color: #ff2e88; border-color: #ffd1ea; box-shadow: 0px 0px 22px rgba(255,46,136,0.95), 0px 0px 4px rgba(255,255,255,0.9); }
+
+/* Dock: dark glass with two neon horizon lines (hard-stop gradient). */
+.ctv-dock { background-color: rgba(7,8,24,0.6); background-image: linear-gradient(180deg, rgba(20,10,48,0.35) 0%, rgba(7,8,24,0.78) 62%, rgba(255,46,136,0.7) 63%, rgba(7,8,24,0.82) 65%, rgba(7,8,24,0.86) 84%, rgba(40,220,255,0.55) 85%, rgba(7,8,24,0.92) 87%, rgba(7,8,24,0.95) 100%); border-color: #28dcff; border-width: 2px; border-style: solid; border-radius: 6px; box-shadow: 0px 0px 18px rgba(40,220,255,0.55), 0px 0px 40px rgba(255,46,136,0.25); }
+.ctv-card { border-radius: 6px; box-shadow: 0px 0px 0px 1px rgba(40,220,255,0.55), 0px 6px 14px rgba(7,8,24,0.8); transition: box-shadow 140ms ease-out; }
+.ctv-card.is-focused { box-shadow: 0px 0px 0px 3px #28dcff, 0px 0px 26px rgba(40,220,255,0.95), 0px 0px 40px rgba(255,46,136,0.75); }
+.ctv-focus { border-color: #28dcff; border-radius: 8px; box-shadow: 0px 0px 22px rgba(40,220,255,0.9), 0px 0px 40px rgba(255,46,136,0.6); }
+.ctv-label { color: #c9f4ff; font-family: monospace; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0px 0px 6px rgba(40,220,255,0.6), 0px 2px 4px rgba(7,8,24,0.95); }
+.ctv-label.is-focused { color: #ffffff; text-shadow: 0px 0px 10px rgba(255,46,136,0.95), 0px 0px 3px rgba(255,255,255,0.9); }
+
+/* Inputs and app library: terminal panels, cyan rows on focus. */
+.ctv-inputs { color: #e9f7ff; font-family: monospace; background-color: rgba(7,8,24,0.96); background-image: linear-gradient(180deg, rgba(40,220,255,0.12) 0%, rgba(7,8,24,0.96) 18%, rgba(7,8,24,0.96) 100%); border-color: #28dcff; border-radius: 6px; }
+.ctv-input-row { color: #e9f7ff; background-color: transparent; border-radius: 4px; }
+.ctv-input-row.is-focused { color: #070818; background-color: #28dcff; box-shadow: 0px 0px 16px rgba(40,220,255,0.85); }
+
+.ctv-library { color: #e9f7ff; background-color: rgba(7,8,24,0.62); background-image: linear-gradient(0deg, transparent, transparent); border-radius: 0px; }
+.ctv-library-panel { color: #e9f7ff; background-color: rgba(7,8,24,0.97); background-image: linear-gradient(180deg, rgba(255,46,136,0.16) 0%, rgba(7,8,24,0.97) 22%, rgba(7,8,24,0.97) 78%, rgba(40,220,255,0.14) 100%); border-color: #ff2e88; border-radius: 8px; }
+.ctv-library-row, .ctv-library-close { color: #e9f7ff; background-color: #10122c; border-color: rgba(40,220,255,0.45); border-radius: 4px; }
+.ctv-library-row.is-focused, .ctv-library-close.is-focused { color: #070818; background-color: #28dcff; }
+.ctv-library-row.is-focused .ctv-label { color: #070818; text-shadow: 0px 0px 0px transparent; }
+
+/* Weather: navy glass, pink edge, sunset bar. */
+.ctv-weather { color: #e9f7ff; font-family: monospace; background-color: rgba(7,8,24,0.86); border-color: #ff2e88; border-width: 2px; border-style: solid; border-radius: 8px; text-shadow: 0px 0px 8px rgba(40,220,255,0.5); }
+.ctv-weather-secondary { color: #ff9fd0; }
+.ctv-weather-bar { background-color: #ff2e88; background-image: linear-gradient(90deg, #28dcff 0%, #8a3cff 40%, #ff2e88 70%, #ff9a45 100%); border-radius: 2px; }

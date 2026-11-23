@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "themeApiVersion": 1,
+  "id": "github:axistem-dev/neon86-theme:neon86",
+  "title": "Neon '86",
+  "description": "Original 80s synthwave look: chrome-and-neon clock, electric cyan outlines with a hot pink glow, monospace labels and neon horizon lines. Two original wallpapers: a striped sun over a neon grid (4K) and a night art-deco Ocean Drive (1080p).",
+  "author": {
+    "name": "aXistem",
+    "url": "https://github.com/axistem-dev"
+  },
+  "themeVersion": "1.1.0",
+  "layout": {
+    "preset": "dock-grid",
+    "columns": 5,
+    "spacingScale": 1,
+    "textScale": 1,
+    "focusScale": 1.1,
+    "weather": {
+      "formats": [
+        "text",
+        "current",
+        "details",
+        "forecast"
+      ],
+      "scale": 1,
+      "padding": 28,
+      "icons": "fill"
+    }
+  },
+  "defaults": {
+    "wallpaperAssetId": "wallpaper",
+    "dim": 0.18,
+    "accent": "#28dcff"
+  },
+  "assets": [
+    {
+      "id": "wallpaper",
+      "path": "assets/sunset/wallpaper.jpg",
+      "mediaType": "image/jpeg",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "id": "wallpaper-ocean-drive",
+      "path": "assets/ocean/wallpaper-1080p.jpg",
+      "mediaType": "image/jpeg",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "preview",
+      "path": "assets/sunset/preview.jpg",
+      "mediaType": "image/jpeg",
+      "width": 960,
+      "height": 540
+    }
+  ],
+  "previewAssetId": "preview",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "textPath": "LICENSE.txt",
+    "creditsPath": "CREDITS.txt"
+  }
+}
